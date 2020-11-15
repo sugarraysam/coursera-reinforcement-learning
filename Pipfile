@@ -1,0 +1,17 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+
+[dev-packages]
+ipython = "*"
+numpy = "1.18.4"
+matplotlib = "3.2.1"
+rlglue = "*"
+tqdm = "*"
+core = {editable = true, path = "./core"}
+
+[requires]
+python_version = "3.8"
