@@ -4,5 +4,8 @@
 # vscode
 .vscode
 
+# ipython
+.ipython
+
 # ignore vrep-scenes zip
 debug/

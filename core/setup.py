@@ -1,3 +1,3 @@
-from setuptools import setup
+import setuptools
 
-setup(name="core")
+setuptools.setup(name="core", packages=setuptools.find_packages())
