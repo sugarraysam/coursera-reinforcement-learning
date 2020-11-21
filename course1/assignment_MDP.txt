@@ -1,0 +1,66 @@
+###
+### MDP 1: Blackjack
+###
+This is a classic example of a player vs dealer blackjack game.
+
+- States
+
+The states could be an array of all previous card seen,
+that is reset everytime the decks are shuffled, as well as the current dealer and player count, current bet
+and total amount of betting money.
+
+- Actions
+
+The actions would be to hit or stand, and also how much to bet. You could
+get more sophisticated with splits and other edge cases.
+
+- Rewards
+
+Finally, I would encode the reward as the gain/loss over a playing episode. An episode would be X
+hands played, and at some point the agent would choose to stop playing. Only at this moment would
+the reward be awarded, based on the difference between final and starting bank.
+
+
+###
+### MDP 2: Coffee making robot
+###
+This is a case where we have a robot driving a coffee machine and it's purpose is to brew your
+coffee. Think of an espresso machine.
+
+- States
+
+Sensor readings of water level, temperature, coffee beans quantity, etc.
+
+- Actions
+
+Add water, brew more coffee beans, put a glass underneath, start/stop coffee machine
+
+- Rewards
+
+-1 billion for any mistake: spilling, breaking a cup, brewing without coffee beans etc.
++1 for a successful coffee brewed.
+
+
+###
+### MDP 3: Web penetration testing RL hacking agent
+###
+This is maybe more of a "niche" example, but think of an RL agent, with access to various
+hacking tools and network connectivity to a target website, trying to identify if the website is
+vulnerable or susceptible to certain known cybersecurity exploits.
+
+- States
+
+The state would be gathered through various fingerprinting techniques but would include the language
+and frameworks used for frontend/backend of website, the versions of those frameworks, the latency,
+SSL public certificates information, IP address, company, DNS records, subdomains, website paths tree
+
+- Actions
+
+Try to exploit vulnerability X of software Y given version Z, try various CVE, perform more fingerprinting,
+port scanning, version detection, send various payloads, etc.
+
+- Rewards
+
+-1 for each action taken by agent, there is an analogy with the maze problem, we want to find a vulnerability
+    as quickly as possible, and get out of the cybersecurity maze
++1 billion if a vulnerability is found

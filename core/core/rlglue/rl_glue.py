@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 """Glues together an experiment, agent, and environment.
 """
 
@@ -182,8 +180,9 @@ class RLGlue:
 
         self.rl_start()
 
-        while (not is_terminal) and ((max_steps_this_episode == 0) or
-                                     (self.num_steps < max_steps_this_episode)):
+        while (not is_terminal) and (
+            (max_steps_this_episode == 0) or (self.num_steps < max_steps_this_episode)
+        ):
             rl_step_result = self.rl_step()
             is_terminal = rl_step_result[3]
 

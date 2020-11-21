@@ -1,4 +1,4 @@
-from .rlglue.environment import BaseEnvironment
+from core.rlglue.environment import BaseEnvironment
 
 import numpy as np
 

@@ -1,4 +1,4 @@
-from .rlglue.agent import BaseAgent
+from core.rlglue.agent import BaseAgent
 
 import numpy as np
 
