@@ -8,6 +8,7 @@ name = "pypi"
 [dev-packages]
 ipython = "*"
 numpy = "1.18.4"
+scipy = "1.4.1"
 matplotlib = "3.2.1"
 rlglue = "*"
 tqdm = "*"
