@@ -13,6 +13,7 @@ matplotlib = "3.2.1"
 rlglue = "*"
 tqdm = "*"
 core = {editable = true, path = "./core"}
+gym = "*"
 
 [requires]
 python_version = "3.8"

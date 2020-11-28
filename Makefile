@@ -9,3 +9,7 @@ pipenv:
 .PHONY: ipython
 ipython:
 	@pipenv run ipython
+
+.PHONY: help
+help:
+	@grep '^.PHONY' Makefile

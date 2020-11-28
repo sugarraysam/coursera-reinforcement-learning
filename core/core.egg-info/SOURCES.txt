@@ -1,9 +1,16 @@
 pyproject.toml
 setup.py
 core/__init__.py
+core/cliffworld_env.py
+core/lunar_lander.py
 core/main_agent.py
+core/manager.py
+core/mountaincar_env.py
+core/pendulum_env.py
 core/ten_arm_env.py
 core/test_env.py
+core/tiles3.py
+core/tools.py
 core.egg-info/PKG-INFO
 core.egg-info/SOURCES.txt
 core.egg-info/dependency_links.txt
